@@ -1,0 +1,10 @@
+package main
+
+import (
+       "fmt"
+       "math/rand"
+)
+
+fun main() {
+    fmt.Println("My favaorite number is", rand.Intn(10))
+}    
