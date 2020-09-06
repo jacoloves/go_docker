@@ -1,5 +1,6 @@
 package animals
 
 func ElephantFeed() string {
-	return "Grass"
+	//return "Grass"
+	return "Noodle"
 }
