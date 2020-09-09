@@ -27,5 +27,26 @@ func varsmp() {
 	fmt.Printf("value = %v\n", 1.000000000000007)
 	fmt.Printf("value = %v\n", 1.000000000000008)
 	fmt.Printf("value = %v\n", 1.000000000000009)
+	fmt.Printf("value = %v\n", float32(1.000000000000000))
+	fmt.Printf("value = %v\n", float32(1.000000000000001))
+	fmt.Printf("value = %v\n", float32(1.000000000000002))
+	fmt.Printf("value = %v\n", float32(1.000000000000003))
+	fmt.Printf("value = %v\n", float32(1.000000000000004))
+	fmt.Printf("value = %v\n", float32(1.000000000000005))
+	fmt.Printf("value = %v\n", float32(1.000000000000006))
+	fmt.Printf("value = %v\n", float32(1.000000000000007))
+	fmt.Printf("value = %v\n", float32(1.000000000000008))
+	fmt.Printf("value = %v\n", float32(1.000000000000009))
+	s := "go string"
+	fmt.Printf("%v", s)
+	r := '竹'
+	fmt.Printf("%v", r)
+	str := `
+	go is
+	raw string reterak
+	rows
+	string
+	`
+	fmt.Printf("%v", str)
 	fmt.Println("---------------end---------------")
 }
