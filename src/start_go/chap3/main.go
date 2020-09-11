@@ -5,5 +5,6 @@ func main() {
 	//varsmp()
 	//arrSmp()
 	//opeSmp()
-	funcSmp()
+	//funcSmp()
+	constSmp()
 }
