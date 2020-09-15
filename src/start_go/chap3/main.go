@@ -6,5 +6,6 @@ func main() {
 	//arrSmp()
 	//opeSmp()
 	//funcSmp()
-	constSmp()
+	//constSmp()
+	scopeSmp()
 }
