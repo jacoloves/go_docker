@@ -9,5 +9,7 @@ func main() {
 	//constSmp()
 	//scopeSmp()
 	//gotoSmp()
-	deferSmp()
+	//deferSmp()
+	//goSmp()
+	initSmp()
 }
