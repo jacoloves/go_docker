@@ -7,5 +7,7 @@ func main() {
 	//opeSmp()
 	//funcSmp()
 	//constSmp()
-	scopeSmp()
+	//scopeSmp()
+	//gotoSmp()
+	deferSmp()
 }
