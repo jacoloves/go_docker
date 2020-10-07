@@ -82,6 +82,54 @@ func easySla() {
 	fmt.Printf("len=%d, cap~%d\n", len(s8), cap(s8))
 }
 
+func copySmp() {
+	s1 := []int{1, 2, 3, 4, 5}
+	s2 := []int{10, 11}
+	n := copy(s1, s2)
+	fmt.Println(n)
+	fmt.Println(s1)
+
+	s3 := []int{1, 2, 3, 4, 5}
+	s4 := []int{10, 11, 12, 13, 14, 15, 16}
+	n2 := copy(s3, s4)
+
+	fmt.Println(n2)
+	fmt.Println(s3)
+
+	b := make([]byte, 9)
+	n3 := copy(b, "あいうえお")
+	fmt.Println(n3, b)
+
+	a := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	s5 := a[2:4]
+	fmt.Println(len(s5))
+	fmt.Println(cap(s5))
+
+	s6 := a[2:4:4]
+	fmt.Println(len(s6))
+	fmt.Println(cap(s6))
+
+	s7 := a[2:4:6]
+	fmt.Println(len(s7))
+	fmt.Println(cap(s7))
+
+	s8 := []string{"Apple", "Banana", "Cherry"}
+
+	for i, v := range s8 {
+		fmt.Printf("[%d] => %s\n", i, v)
+	}
+
+	for i2 := 0; i2 < len(s8); i2++ {
+		fmt.Printf("[%d] -> %s\n", i2, s8[i2])
+		s8 = append(s8, "Melon")
+	}
+
+	for i, v := range s8 {
+		fmt.Printf("{")
+	}
+}
+
 func sliceSmp() {
 	// s := make([]int, 10)
 	// fmt.Println(s)
@@ -99,4 +147,5 @@ func sliceSmp() {
 	capSmp()
 	slaSmp()
 	easySla()
+	copySmp()
 }
