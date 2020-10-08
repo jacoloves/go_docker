@@ -120,14 +120,34 @@ func copySmp() {
 		fmt.Printf("[%d] => %s\n", i, v)
 	}
 
-	for i2 := 0; i2 < len(s8); i2++ {
-		fmt.Printf("[%d] -> %s\n", i2, s8[i2])
-		s8 = append(s8, "Melon")
+	// for i2 := 0; i2 < len(s8); i2++ {
+	// 	fmt.Printf("[%d] -> %s\n", i2, s8[i2])
+	// 	s8 = append(s8, "Melon")
+	// }
+
+	s9 := []string{"Apple", "Banana", "Cherry"}
+
+	for i, v := range s9 {
+		fmt.Printf("[%d] => %s\n", i, v)
+		s9 = append(s9, "Melon")
 	}
 
-	for i, v := range s8 {
-		fmt.Printf("{")
+	fmt.Println(s9)
+}
+
+func sum(s ...int) int {
+	n := 0
+	for _, v := range s {
+		n += v
 	}
+	return n
+}
+
+func pow(a []int) {
+	for i, v := range a {
+		a[i] = v * v
+	}
+	return
 }
 
 func sliceSmp() {
@@ -143,9 +163,15 @@ func sliceSmp() {
 	// fmt.Println(a)
 	// fmt.Println(a[0])
 	// fmt.Println(a[4])
-	lenSmp()
-	capSmp()
-	slaSmp()
-	easySla()
-	copySmp()
+	// lenSmp()
+	// capSmp()
+	// slaSmp()
+	// easySla()
+	// copySmp()
+	// fmt.Println(sum(1, 2, 3))
+	// fmt.Println(sum(1, 2, 3, 4, 5))
+	// fmt.Println(sum())
+	a := []int{1, 2, 3}
+	pow(a)
+	fmt.Println(a)
 }
